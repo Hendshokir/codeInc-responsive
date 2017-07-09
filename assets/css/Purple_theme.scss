@@ -1,0 +1,132 @@
+$mainColor : purple;
+/* Start Option Box */
+.option-box{
+	.color-option{
+		border: 4px solid $mainColor;
+	}
+	.gear-check{	
+		background-color: $mainColor;
+		}
+}
+/* End Option Box */
+
+/* Start of Navbar */
+.navbar-inverse {
+	.navbar-nav{
+		> .active{
+			> a{
+				background-color: $mainColor;
+				&:foucs{
+					background-color: $mainColor;
+				}
+				&:hover{
+					background-color: $mainColor;
+				}
+			}
+		}
+	}
+}
+.navbar-default{
+	.navbar-brand{
+		span{
+			color: $mainColor;
+		}
+	}
+}
+
+// Dropdown Menu
+.navbar-right{
+	.dropdown-menu{
+		border-top: 1px solid $mainColor;
+		> li{
+			> a{
+				&:focus{
+					background-color: $mainColor;
+				}
+				&:hover{
+					background-color: $mainColor;
+				}
+			}
+		}
+		.divider{
+			background-color: $mainColor;
+		}
+	}
+}
+/* End Of Navbar */
+
+/* Start Slider */
+.carousel-indicators {
+	.active{
+		background-color:  $mainColor;
+		border: 1px solid $mainColor;
+	}
+}
+
+/* End of Slider */
+
+/* Start About Section */
+.about{
+	span{
+		color: $mainColor;
+	}
+}
+/* End of About Scetion */
+
+/* Start Feature Section */
+.feature{
+	.feat{
+		span.glyphicon{	
+			color: $mainColor;
+		}
+	}
+}
+/* End of Feature Scetion */
+
+/* Start testimonail */
+.testimonail{
+	.carousel-indicators{
+		li.active{		
+			border: 3px solid $mainColor;
+		}
+	}
+	span{
+		color: $mainColor;
+	}
+}
+/* End testimonail */
+
+/* Start Price Table Section */
+.price{
+	.priceBox{
+		&:hover p{
+			border: 2px solid $mainColor;
+		}
+	}
+}
+/* End Price Table Section */
+
+/* Start Our Team Section */
+.ourTeam{
+	.team{
+		.person{
+			h3{color: $mainColor;}
+		}
+	}
+	
+}
+/* End Our Team Section */
+
+/* Start Footer */
+footer{
+	h3{
+		color: $mainColor;
+	}
+	.copyright{
+		span{
+			color: $mainColor;
+		}
+	}
+}
+
+/* End Footer */

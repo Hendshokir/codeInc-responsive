@@ -1,0 +1,70 @@
+/* Start Option Box */
+.option-box .color-option {
+  border: 4px solid crimson; }
+.option-box .gear-check {
+  background-color: crimson; }
+
+/* End Option Box */
+/* Start of Navbar */
+.navbar-inverse .navbar-nav > .active > a {
+  background-color: crimson; }
+  .navbar-inverse .navbar-nav > .active > a:foucs {
+    background-color: crimson; }
+  .navbar-inverse .navbar-nav > .active > a:hover {
+    background-color: crimson; }
+
+.navbar-default .navbar-brand span {
+  color: crimson; }
+
+.navbar-right .dropdown-menu {
+  border-top: 1px solid crimson; }
+  .navbar-right .dropdown-menu > li > a:focus {
+    background-color: crimson; }
+  .navbar-right .dropdown-menu > li > a:hover {
+    background-color: crimson; }
+  .navbar-right .dropdown-menu .divider {
+    background-color: crimson; }
+
+/* End Of Navbar */
+/* Start Slider */
+.carousel-indicators .active {
+  background-color: crimson;
+  border: 1px solid crimson; }
+
+/* End of Slider */
+/* Start About Section */
+.about span {
+  color: crimson; }
+
+/* End of About Scetion */
+/* Start Feature Section */
+.feature .feat span.glyphicon {
+  color: crimson; }
+
+/* End of Feature Scetion */
+/* Start testimonail */
+.testimonail .carousel-indicators li.active {
+  border: 3px solid crimson; }
+.testimonail span {
+  color: crimson; }
+
+/* End testimonail */
+/* Start Price Table Section */
+.price .priceBox:hover p {
+  border: 2px solid crimson; }
+
+/* End Price Table Section */
+/* Start Our Team Section */
+.ourTeam .team .person h3 {
+  color: crimson; }
+
+/* End Our Team Section */
+/* Start Footer */
+footer h3 {
+  color: crimson; }
+footer .copyright span {
+  color: crimson; }
+
+/* End Footer */
+
+/*# sourceMappingURL=default_theme.css.map */

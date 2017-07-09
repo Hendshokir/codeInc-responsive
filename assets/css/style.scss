@@ -1,0 +1,496 @@
+$sectionPadding :60px;
+$mainBg :#EEE;
+$whiteBg: #FFF;
+body{
+	padding-top: 70px;
+	font-family: 'Droid Sans',sans-serif;
+	overflow: hidden;
+}
+/* Start Option Box */
+.option-box{
+	position: fixed;
+	top:100px;
+	left: 0;
+	z-index:9999;
+	.color-option{
+		float: left;
+		background-color: #333;
+		color: $whiteBg;
+		padding: 10px;
+		display: none;
+		ul{
+			li{
+				width:20px;
+				height: 20px;
+				display: inline-block;
+				margin-right: 3px;
+				cursor: pointer;
+			}
+		}
+	}
+	.gear-check{
+		padding: 5px;
+		color:#fff;
+		cursor: pointer;
+		}
+}
+/* End Option Box */
+
+/* Start of Navbar */
+.navbar{
+	min-height: 70px;
+	.navbar-toggle{margin-top: 18px;}
+}
+
+// Normal Link and Brand 
+.navbar-default{
+	
+	.navbar-brand{
+		color:#BBB;
+		font-size: 30px;
+		line-height: 40px;
+	}
+	.navbar-nav{
+		> li{
+			> a{
+				color:#BBB;
+				padding-bottom: 25px;
+				padding-top: 25px;
+				font-size: 16px;
+			}
+		}
+	}
+}
+
+// Dropdown Menu
+.navbar-right{
+	.dropdown-menu{
+		// to adjust direction of dropdown
+		right: auto;
+		left: 0;
+		background-color: #333;
+		min-width: 200px;
+		> li{
+			> a{
+				color: $whiteBg;
+				padding: 6px 20px;
+				@extend %transition;
+				&:focus{
+					color: $whiteBg;
+					padding-left: 30px;
+				}
+				&:hover{
+					color: $whiteBg;
+					padding-left: 30px;
+				}
+			}
+		}
+	}
+}
+
+/* End Of Navbar */
+
+/* Start Slider */
+.carousel-indicators {
+	bottom: 0;
+	li{
+		width: 15px;
+		height: 15px;
+	}
+	.active{
+		width: 17px;
+		height: 17px;
+	}
+}
+.carousel-inner{
+	> .item {
+		> img{
+			height: 400px;
+			width: 100%;
+		}
+		> a {
+			> img{
+				height: 400px;
+				width: 100%;
+			}
+		}
+	}
+}
+.carousel-caption{
+	bottom:90px;
+	background: rgba(3,3,3,0.3);
+	padding-left: 20px;
+	padding-right: 20px;
+}
+/* End of Slider */
+
+/* Start About Section */
+.about{
+	@extend %StartEndSec;
+	text-transform: capitalize;
+	h1{font-weight: bold;}
+	.lead{
+		margin-top: 20px;
+		color: #777;
+	}
+}
+/* End of About Scetion */
+
+/* Start Feature Section */
+.feature{
+	@extend %StartEndSec;
+	background-color: $mainBg;
+	h2{margin-bottom: $sectionPadding;font-weight: bold;}
+	.feat{
+		margin-bottom: 30px;
+		span.glyphicon{font-size: 24px;}
+		p{line-height: 1.7em;}
+	}
+}
+/* End of Feature Scetion */
+
+/* Start testimonail */
+.testimonail{
+	@extend %StartEndSec;
+	h2{
+		margin-bottom: $sectionPadding - 20;
+		text-transform: capitalize;
+		font-weight: bold;
+	}
+	.carousel-inner{min-height: 160px;}
+	.carousel-indicators{
+		position: static;
+		width: 100%;
+		margin-left: auto;
+		li{
+			@extend %transition;
+			width: 80px;
+			height: 80px;
+			text-indent: 0;
+			background: none;
+			opacity: 0.5;
+			border: 3px solid $whiteBg;
+			margin: 5px;
+			
+			img{
+				max-width: 100%;
+				border-radius: 60px;
+			}
+		}
+		li.active{
+			opacity: 1;
+			border-radius: 60px;
+		}
+	}
+	p{line-height: 1.7em;}
+	span{
+		font-weight: bold;
+		font-size: 18px;
+	}
+}
+/* End testimonail */
+
+/* Start Price Table Section */
+.price{
+	@extend %StartEndSec;
+	background-color: $mainBg;
+	h2{
+		margin-bottom: $sectionPadding - 20;
+		text-transform: capitalize;
+		font-weight: bold;
+	}
+	.priceBox{
+		background-color: $whiteBg;
+		border: 1px solid #DDD;
+		padding: 10px;
+		margin-bottom: 15px;
+		&:hover p{
+			-webkit-transform:scale(1.1,1.1) rotate(360deg);
+			-moz-transform:scale(1.1,1.1) rotate(360deg);
+			-o-transform:scale(1.1,1.1) rotate(360deg);
+			transform:scale(1.1,1.1) rotate(360deg);
+		}
+		h2{margin: 5px 0 15px;}
+		p{
+			font-size: 30px;
+			font-weight: bold;
+			width: 100px;
+			height: 100px;
+			border-radius: 50px;
+			background-color: $mainBg;
+			line-height: 100px;
+			-webkit-transition-duration:0.7s;
+			-moz-transition-duration:0.7s;
+			-o-transition-duration:0.7s;
+			transition-duration:0.7s;
+			border: 2px solid $whiteBg;
+		}
+		ul{
+			font-size: 18px;
+			line-height: 250%;
+		}
+		.btn{margin-bottom: 10px;}
+	}
+}
+/* End Price Table Section */
+
+/* Start Our Team Section */
+.ourTeam{
+	@extend %bgSize;
+	background: url("../images/Team/team.jpg") no-repeat center center fixed;
+	min-height: 600px;
+	.team{
+		@extend %StartEndSec;
+		min-height: 600px;
+		background: rgba(2,2,2,0.7);
+		color: $whiteBg;
+		h2{
+		margin-bottom: $sectionPadding - 20;
+		text-transform: capitalize;
+		font-weight: bold;
+		}
+		.person{margin-bottom: 40px;}
+	}
+	
+}
+/* End Our Team Section */
+
+/* Start Subscribe Section */
+.subscribe{
+	@extend %StartEndSec;
+	text-transform: capitalize;
+	h2{
+		margin-bottom: $sectionPadding - 20;
+		letter-spacing: 1.5px;
+	}
+	.lead{color: #777;}
+	.form-control{
+		border-radius: 0;
+		width: 300px;
+		margin-right: -5px;
+	}
+	.btn{border-radius: 0;}
+}
+
+/* End Subscribe Section */
+
+
+/* Start Satistical Section */
+.satistical{
+	@extend %bgSize;
+	background: url('../images/Satistical/stats.jpg') no-repeat center center fixed;
+	min-height: 300px;
+	.sats{
+		@extend %StartEndSec;
+		background: rgba(2,2,2,0.7);
+		min-height: 300px;
+		color: #B6B5B5;
+		text-transform: capitalize;
+		h2{margin-bottom: $sectionPadding - 20;}
+		.data{
+			@extend %transition;
+			margin-bottom: 40px;
+			.lead{
+				font-size: 60px;
+				margin-bottom: 0;
+				font-weight: 800;
+			}
+			span{font-size: 18px;}
+			&:hover{color: $whiteBg;}
+		}
+	}
+}
+/* End Satistical Section */
+
+/* Starts Our Skills Section */
+.skills{
+	@extend %StartEndSec;
+	h2{margin-bottom: $sectionPadding - 20;}
+	.progress{height: 36px;}
+	.progress-bar{
+		font-size: 15px;
+		font-weight: bold;
+		text-align: left;
+		text-indent: 10px;
+		line-height: 36px;	
+	}
+	h3{
+		text-transform: capitalize;
+		font-weight: bold;
+		margin-top:0;
+	}
+	.lead{text-transform: capitalize;}
+	.btn{text-transform: capitalize;}
+}
+/* End Our Skills Section */
+
+/* Start Contact Us Section */
+.contactUS{
+	@extend %bgSize;
+	background: url('../images/Contact/contact-us.jpg') no-repeat center center fixed;
+	min-height: 300px;
+	.contact{
+		
+		@extend %StartEndSec;
+		background: rgba(9,9,9,0.7);
+		min-height: 300px;
+		text-transform: capitalize;
+		color: #B6B5B5;
+		.lead{margin-bottom: 40px;}
+		.form-control{
+			background: rgba(82,78,78,0.7);
+			border: none;
+			color: $whiteBg;
+		}
+		textarea{
+			height: 108px;
+			margin-bottom: 15px;
+			color: $whiteBg;
+		}
+	}
+}
+/* End Contact Us Section */
+
+/* Start Our Clients Section */
+.clients{
+	@extend %StartEndSec;
+	background-color: $mainBg;
+	img{
+		@extend %transition;
+		margin-top: 20px;
+		margin-bottom: 20px;
+		opacity: 0.5;
+		&:hover{opacity: 1;}
+	}
+}
+/* End  Our Clients Section  */
+
+/* Start Footer */
+footer{
+	padding-top: 60px;
+	background-color: #111;
+	color: #AAA;
+	h3{
+		text-transform: capitalize;
+		letter-spacing: 1px;
+	}
+	.item li{
+		margin-bottom: 10px;
+		padding-left: 0;
+	}
+	
+	.list-inline {
+		margin-left: 8px;
+		> li{
+			@extend %transition;
+			padding-left: 0;
+			padding-right: 0;
+			opacity: 0.7;
+			&:hover{
+				opacity: 1;
+			}
+		}
+	}
+	.media{margin-top: 0;}
+	.img-thumbnail{
+		background: rgba(0,0,0,0.4);
+		border: 1px solid #333;
+		margin-bottom: 5px;
+	}
+	.copyright{
+		background-color: #333;
+		padding: 30px 0 30px 0;
+		margin-top: 20px;
+		font-size: 18px;
+	}
+}
+
+/* End Footer */
+
+/* Start Loading Overlay */
+.loading-overlay{
+	background-color: #222;
+	color: $whiteBg;
+	left:0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 99999;
+}
+
+.spinner {
+	width: 60px;
+	height: 60px;
+	position: relative;
+	margin: 300px auto;
+	.double-bounce1, .double-bounce2 {
+	  width: 100%;
+	  height: 100%;
+	  border-radius: 50%;
+	  background-color: #FFF;
+	  opacity: 0.6;
+	  position: absolute;
+	  top: 0;
+	  left: 0;
+	  -webkit-animation: bounce 2.0s infinite ease-in-out;
+	  animation: bounce 2.0s infinite ease-in-out;
+	}
+
+	.double-bounce2 {
+	  -webkit-animation-delay: -1.0s;
+	  animation-delay: -1.0s;
+	}
+
+	@-webkit-keyframes bounce {
+	  0%, 100% { -webkit-transform: scale(0.0) }
+	  50% { -webkit-transform: scale(1.0) }
+	}
+
+	@keyframes bounce {
+	  0%, 100% { 
+		transform: scale(0.0);
+		-webkit-transform: scale(0.0);
+	  } 50% { 
+		transform: scale(1.0);
+		-webkit-transform: scale(1.0);
+	  }
+	}
+}
+/* End Loading Overlay */
+
+/* Start Scroll to Top */
+#scroll-top{
+	background-color: #777;
+	color: #DDD;
+	text-align: center;
+	width: 50px;
+	height: 40px;
+	position: fixed;
+	right: 15px;
+	bottom:10px;
+	z-index: 99999;
+	display: none;
+	&:hover{cursor: pointer;}
+}
+/* End Scroll to Top */ 
+/* */
+%StartEndSec{
+	padding-top: $sectionPadding;
+	padding-bottom: $sectionPadding;
+}
+%transition{
+	-webkit-transition:all 0.5s ease-in-out;
+	-moz-transition:all  0.5s ease-in-out;
+	-o-transition:all 0.5s ease-in-out;
+	transition:all  0.5s ease-in-out;
+			
+}
+%bgSize{
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	background-size:cover;	
+}
+// import Media Query
+@import "media";

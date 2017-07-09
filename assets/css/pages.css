@@ -1,0 +1,60 @@
+body {
+  padding-top: 70px;
+  font-family: 'Raleway',sans-serif; }
+
+/* Start About Page */
+.about-us {
+  text-transform: capitalize; }
+  .about-us h1 {
+    font-weight: bold;
+    font-size: 50px;
+    letter-spacing: -3px; }
+  .about-us hr {
+    width: 50%; }
+  .about-us img {
+    margin-bottom: 60px; }
+  .about-us h2 {
+    font-weight: bold; }
+
+.about-help {
+  padding-top: 60px;
+  background-color: #DDD; }
+  .about-help h2 {
+    font-weight: bold;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    margin-top: 30px; }
+  .about-help .lead {
+    line-height: 1.8em; }
+  .about-help .btn {
+    background-color: #333;
+    border: 1px solid #333;
+    margin-bottom: 20px; }
+
+/* End About Page */
+/* Start FAQ Page */
+.faq {
+  text-transform: capitalize; }
+  .faq h1 {
+    font-weight: bold;
+    font-size: 50px;
+    letter-spacing: -2px; }
+  .faq hr {
+    width: 70%; }
+  .faq .lead {
+    padding: 0 0 40px 0; }
+
+.faq-questions .panel-heading a:after {
+  content: "\e114";
+  font-family: 'Glyphicons Halflings';
+  float: right;
+  color: #333; }
+.faq-questions .panel-heading a.collapsed:after {
+  content: "\e080"; }
+
+/* End FAQ Page */
+.about-us, .faq {
+  padding-top: 60px;
+  padding-bottom: 60px; }
+
+/*# sourceMappingURL=pages.css.map */

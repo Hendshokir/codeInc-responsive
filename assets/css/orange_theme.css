@@ -1,0 +1,70 @@
+/* Start Option Box */
+.option-box .color-option {
+  border: 4px solid #F48024; }
+.option-box .gear-check {
+  background-color: #F48024; }
+
+/* End Option Box */
+/* Start of Navbar */
+.navbar-inverse .navbar-nav > .active > a {
+  background-color: #F48024; }
+  .navbar-inverse .navbar-nav > .active > a:foucs {
+    background-color: #F48024; }
+  .navbar-inverse .navbar-nav > .active > a:hover {
+    background-color: #F48024; }
+
+.navbar-default .navbar-brand span {
+  color: #F48024; }
+
+.navbar-right .dropdown-menu {
+  border-top: 1px solid #F48024; }
+  .navbar-right .dropdown-menu > li > a:focus {
+    background-color: #F48024; }
+  .navbar-right .dropdown-menu > li > a:hover {
+    background-color: #F48024; }
+  .navbar-right .dropdown-menu .divider {
+    background-color: #F48024; }
+
+/* End Of Navbar */
+/* Start Slider */
+.carousel-indicators .active {
+  background-color: #F48024;
+  border: 1px solid #F48024; }
+
+/* End of Slider */
+/* Start About Section */
+.about span {
+  color: #F48024; }
+
+/* End of About Scetion */
+/* Start Feature Section */
+.feature .feat span.glyphicon {
+  color: #F48024; }
+
+/* End of Feature Scetion */
+/* Start testimonail */
+.testimonail .carousel-indicators li.active {
+  border: 3px solid #F48024; }
+.testimonail span {
+  color: #F48024; }
+
+/* End testimonail */
+/* Start Price Table Section */
+.price .priceBox:hover p {
+  border: 2px solid #F48024; }
+
+/* End Price Table Section */
+/* Start Our Team Section */
+.ourTeam .team .person h3 {
+  color: #F48024; }
+
+/* End Our Team Section */
+/* Start Footer */
+footer h3 {
+  color: #F48024; }
+footer .copyright span {
+  color: #F48024; }
+
+/* End Footer */
+
+/*# sourceMappingURL=orange_theme.css.map */

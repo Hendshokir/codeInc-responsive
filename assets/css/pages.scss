@@ -1,0 +1,48 @@
+$sectionPadding: 60px;
+body{
+	padding-top: 70px;
+	font-family: 'Raleway',sans-serif;
+}
+/* Start About Page */
+.about-us{
+	@extend %StartEndSec;
+	text-transform: capitalize;
+	h1{font-weight: bold;font-size: 50px;letter-spacing: -3px;}
+	hr{width:50%;}
+	img{margin-bottom: $sectionPadding;}
+	h2{font-weight: bold;}
+	
+}
+.about-help{
+	padding-top: $sectionPadding;
+	background-color: #DDD;
+	
+	h2{font-weight: bold;text-transform: capitalize;margin-bottom: 20px; margin-top: 30px;}
+	.lead{line-height: 1.8em;}
+	.btn{background-color: #333;border: 1px solid #333; margin-bottom: 20px;}
+	
+}
+/* End About Page */
+
+/* Start FAQ Page */
+.faq{
+	@extend %StartEndSec;
+	text-transform: capitalize;
+	h1{font-weight: bold;font-size: 50px;letter-spacing: -2px;}
+	hr{width:70%;}
+	.lead{padding:  0 0 40px 0;}
+}
+.faq-questions{
+	.panel-heading a:after{
+		content: "\e114";
+		font-family:'Glyphicons Halflings';
+		float: right;
+		color:#333;
+	}
+	.panel-heading a.collapsed:after{content: "\e080";}
+}
+/* End FAQ Page */
+%StartEndSec{
+	padding-top: $sectionPadding;
+	padding-bottom: $sectionPadding;
+}

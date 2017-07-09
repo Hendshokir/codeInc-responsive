@@ -1,0 +1,60 @@
+/* NavBar */
+@media(max-width:767px){
+	.navbar-default{
+		.navbar-nav{
+			> li{
+				> a{
+					padding-bottom: 10px;
+					padding-top: 10px;
+				}
+			}
+		}
+	}
+	.navbar-fixed-top {
+		.navbar-collapse{max-height: none;}
+	} 
+	.navbar-fixed-bottom {
+		.navbar-collapse{max-height: none;}
+	}
+}
+
+/* Subscribe */
+@media (max-width:767px){
+	.subscribe{
+		h1{
+			letter-spacing: 1px;
+		}
+		.form-control{
+			margin: 20px auto;
+			width: 400px;
+		}
+	}
+}
+
+/* Skills */
+@media (max-width:767px){
+	.skills{
+		h3{
+			margin-top:$sectionPadding - 20;
+		}
+	}
+}
+
+/* Contact Us*/
+@media (max-width:767px){
+	.contactUs{
+		.contact{
+			textarea{
+				margin-top: 15px;
+			}
+		}
+	}
+}
+/* Footer */
+@media (max-width:767px){
+	footer{
+		.media{
+			margin-bottom: 10px;
+		}
+	}
+}
